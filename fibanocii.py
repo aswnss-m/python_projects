@@ -5,10 +5,10 @@ limit =int(input("Enter the limit : "))
 series = list()
 
 if limit == 0:
-	print("The fibonacii series is : ", n0)
+	print(n0)
 
 elif limit == 1:
-	print("The fibonacii series is : ", n0 ,",",n1)
+	print(n0 ,",",n1)
 
 else:
 	for i in range(limit):

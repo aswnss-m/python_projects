@@ -15,4 +15,4 @@ else:
 		n0 = n1
 		n1 =temp
 
-print("The nth term of the fibonacii is : " , series[limit -1])
+print(series[limit -1])

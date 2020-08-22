@@ -11,7 +11,7 @@ for i in num:
 	product = 1
 
 if Sum == int(num):
-	print("The number is Armstrong")
+	print("Yes")
 else:
-	print("The number is not Armstrong") 
+	print("No") 
 
