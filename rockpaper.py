@@ -20,7 +20,8 @@ try:     #to catch the ctrl + c key interruption so that we can end the game; se
 	while True: #To continuerun the game 
 		ran.seed(time.time())  #setting the seed value of the random module
 		com = ran.choice(items) #setting the option of the computer fisrt so that he cant cheat by looking into the memory block which saves our option
-		option = lower(input("Enter your choice : "))
+		option = input("Enter your choice : ")
+		option = option.lower()	
 		try:
 			if option in items:	    #checking to see that the user have entered a valid option , check the else block at line 56
 				if com == option :
