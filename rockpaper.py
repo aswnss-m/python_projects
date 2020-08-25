@@ -23,6 +23,7 @@ try:     #to catch the ctrl + c key interruption so that we can end the game; se
 		option = input("Enter your choice : ")
 		option = option.lower()	
 		try:
+			print("The computer chose : ",com)
 			if option in items:	    #checking to see that the user have entered a valid option , check the else block at line 56
 				if com == option :
 				 	print("\ndraw")
