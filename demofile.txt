@@ -1,0 +1,9 @@
+This
+Is 
+A
+Demo
+FileThis
+Is 
+A
+Demo
+File Hello this is long line sentance , just to check whether the rstrip kolamaakal the long lines
