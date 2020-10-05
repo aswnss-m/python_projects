@@ -11,18 +11,16 @@ Output: Because nums[0] + nums[1] = 9
 '''
 """
 num = [2,5,7,15]
-target = 9
+target = 12
 result =[]
 for i in range(len(num)):
 	a = num[i]
-	for x in range(1,len(num)):
-		b = num[x]
-		if a + b == target:
-			result.append(i)
-			result.append(x)
-		else:
-			continue
-
+	if (target-a) in num:
+		result.append(i) 
+		result.append(num.index(target-a))
+		break 
+	else:
+		continue
 print('output: ',result)
-print('expected: [0,2]')
+print('expected: [1,2]')
 
