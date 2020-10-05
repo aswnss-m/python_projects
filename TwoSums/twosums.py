@@ -10,17 +10,13 @@ Output: [0,1]
 Output: Because nums[0] + nums[1] = 9 
 '''
 """
-num = [2,5,7,15]
-target = 12
 result =[]
 for i in range(len(num)):
 	a = num[i]
-	if (target-a) in num:
-		result.append(i) 
-		result.append(num.index(target-a))
-		break 
-	else:
-		continue
-print('output: ',result)
-print('expected: [1,2]')
+	for x in range(i+1,len(num)):
+		if a + num[x] == target:	
+			result.append(i) 
+			result.append(x)
+			break
+print(result)
 
