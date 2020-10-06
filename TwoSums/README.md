@@ -12,4 +12,11 @@ Input: nums = [2,7,11,15], target =9
 Output: [0,1]
 Output: Because nums[0] + nums[1] = 9 
 '''
+##How to run this project
+
+->  *./master.py* is the ready to run file
+
+->  *./twosums.py* is the algorithm of Two Sums
+
+->  *./sample_test.py* is a test file 
 
