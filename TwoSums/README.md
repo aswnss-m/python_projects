@@ -12,7 +12,7 @@ Input: nums = [2,7,11,15], target =9
 Output: [0,1]
 Output: Because nums[0] + nums[1] = 9 
 '''<br>
-<h2>How to run this project<h2>
+<h2>How to run this project</h2>
  <u>
 
 ->  *./master.py* is the ready to run file
