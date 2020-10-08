@@ -10,8 +10,4 @@ for i in num:
 	Sum += product
 	product = 1
 
-if Sum == int(num):
-	print("Yes")
-else:
-	print("No") 
-
+print("Yes") if Sum == int(num) else print("No")
