@@ -77,11 +77,11 @@ These are basic programs I've written in the Python language. 🐍
   </tr>
   <tr>
     <td>🧊<a href="https://github.com/aswnss-m/python_projects/blob/master/sum_of_cubes.py">sum_of_cubes.py</a></td>
-    <td>#python program to find the sum of cubes</td>
+    <td>Python program to find the sum of cubes</td>
   </tr>
   <tr>
     <td>⏹️<a href="https://github.com/aswnss-m/python_projects/blob/master/sum_of_squares.py">sum_of_squares.py</a></td>
-    <td>#python program to find the sum of squares</td>
+    <td>Python program to find the sum of squares</td>
   </tr>
 </table>
 
