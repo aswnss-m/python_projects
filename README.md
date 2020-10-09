@@ -1,6 +1,10 @@
 # python_basic
 These are basic programs I've written in the Python language. 🐍
 
+<blockquote>“Good code is its own best documentation. As you're about to add a comment, ask yourself, "How can I improve the code so that this comment isn't needed?" Improve the code and then document it to make it even clearer.”<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>-- Steve McConnell</b>
+</blockquote>
+
 ## Programs
 <table style="width:100%">
   <tr>
