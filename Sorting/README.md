@@ -9,9 +9,10 @@ grasp and understand for a beginner level programmer
 ## Files
 
 <details>
-<summary>1.(Insertion Sorting)['https://github.com/aswnss-m/python_projects/blob/master/Sorting/insertion_sort.py']</summary>
+<summary>1.<a href="https://github.com/aswnss-m/python_projects/blob/master/Sorting/insertion_sort.py">Insertion Sorting</a>
 <br>
-**Insertion sort** is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+<b>Insertion Sort</b> is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.</summary>
+<br>The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
 Algorithm
 
 To sort an array of size n in ascending order:
