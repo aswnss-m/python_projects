@@ -16,10 +16,13 @@ grasp and understand for a beginner level programmer
 Algorithm
 
 To sort an array of size n in ascending order:
+<ol>
+  <ul> Iterate from arr[1] to arr[n] over the array. </ul>
+  <ul> Compare the current element (key) to its predecessor.</ul>
+<ul> If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.</ul>
+  </ol><br>
 
-1: Iterate from arr[1] to arr[n] over the array.
-2: Compare the current element (key) to its predecessor.
-3: If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif">
 
 </details>
 
