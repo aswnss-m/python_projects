@@ -55,3 +55,37 @@ arr[] = 64 25 12 22 11
 <br>
 <img src= "https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif" style="transform:rotate(-90deg)">
 </details>
+<details>
+	<summary>
+		3. <a href="https://github.com/aswnss-m/python_projects/blob/master/Sorting/bubble_sort.py">Bubble Sort</a>
+		<br><b>Bubble Sort</b> is a simple sorting algorithm. This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order.
+	</summary> <br>
+	Bubble sort should be avoided in the case of large collections. It will not be efficient in the case of a reverse-ordered collection. 
+
+	<blockquote>
+
+	Step-by-step example
+
+Take an array of numbers " 5 1 4 2 8", and sort the array from lowest number to greatest number using bubble sort. In each step, elements written in bold are being compared. Three passes will be required;
+
+First Pass 	
+    ( 5 1 4 2 8 ) → ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1.
+    ( 1 5 4 2 8 ) → ( 1 4 5 2 8 ), Swap since 5 > 4
+    ( 1 4 5 2 8 ) → ( 1 4 2 5 8 ), Swap since 5 > 2
+    ( 1 4 2 5 8 ) → ( 1 4 2 5 8 ), Now, since these elements are already in order (8 > 5), algorithm does not swap them.
+Second Pass
+    ( 1 4 2 5 8 ) → ( 1 4 2 5 8 )
+    ( 1 4 2 5 8 ) → ( 1 2 4 5 8 ), Swap since 4 > 2
+    ( 1 2 4 5 8 ) → ( 1 2 4 5 8 )
+    ( 1 2 4 5 8 ) → ( 1 2 4 5 8 )
+
+Now, the array is already sorted, but the algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted.
+
+Third Pass
+    ( 1 2 4 5 8 ) → ( 1 2 4 5 8 )
+    ( 1 2 4 5 8 ) → ( 1 2 4 5 8 )
+    ( 1 2 4 5 8 ) → ( 1 2 4 5 8 )
+    ( 1 2 4 5 8 ) → ( 1 2 4 5 8 )
+	</blockquote>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif">
+</details>
