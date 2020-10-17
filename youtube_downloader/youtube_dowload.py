@@ -80,8 +80,14 @@ def get_video(video):
 	for x in video.streams.filter(file_extension = "mp4").all():
 		res = x.resolution
 		tag = x.itag
+		try:
 
-		print("resolution : {}   ||  tag : {}".format(res,tag))
+			size = video.streams.get_by_itag(tag).filesize /1000000
+		except Exception:
+			size ="Null"
+
+
+		print("tag : {} || resolution : {} || size : {} MB ".format(tag,res,size))
 
 	tag = int(input("Enter the tag number of resolution needed: "))
 
@@ -92,8 +98,12 @@ def get_audio(video):
 	for x in video.streams.filter(type ='audio'):
 		abr = x.abr
 		tag = x.itag
+		try:
+			size = video.streams.get_by_itag(tag).filesize /1000000
+		except Exception:
+			size = "Null "
 
-		print("bitrate : {}   ||  tag : {}".format(abr,tag))
+		print("tag : {} || bitrate : {} || size : {} MB ".format(abr,tag,size))
 
 	tag = int(input("Enter the tag number of bitrate needed: "))
 
