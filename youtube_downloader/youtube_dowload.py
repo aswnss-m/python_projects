@@ -3,14 +3,16 @@ from os import system
 try:
 	from pytube import YouTube
 	from pytube import Playlist
+	import urllib.request
+	import re
 except Exception as e:
 	print("Some modules are missing {}".format(e))
 
 	#installing required modules
 	try:
-		system("pip3 install pytube3")	#for ubuntu
+		system("pip3 install pytube3 regex urllib3")	#for ubuntu
 	except:
-		system("pip install pytube3")	#for windows
+		system("pip install pytube3 regex urllib3")	#for windows
 	
 
 	
@@ -45,9 +47,21 @@ def run(option):
 		print("Wrong input\n")		#if the user entered a wrong number 
 		start()						#program starts from the begining
 
-#searching need to be done
+#this will return the first video link
 def search():
-	pass
+	search_keyword = input("Search : ")
+	search_keyword = search_keyword.replace(" ", "+")
+	html = urllib.request.urlopen("https://www.youtube.com/results?search_query=" + search_keyword)
+	video_ids = re.findall(r"watch\?v=(\S{11})",html.read().decode())
+	
+	if video_ids == []: #if no video is found , the list will be empty
+		print("\nNo Video Found , Try Again !! \n")
+		search()
+	else:
+		url ="https://www.youtube.com/watch?v=" + video_ids[0]
+
+
+	get_details(url)
 
 #getting the url of the video
 def get_url():
@@ -77,11 +91,12 @@ def get_details(url):
 
 def get_video(video):
 
-	for x in video.streams.filter(file_extension = "mp4").all():
+	for x in video.streams.filter(file_extension = "mp4"):
 		res = x.resolution
 		tag = x.itag
-		try:
 
+		#some files doesnt show filesize , it creates a traceback error , therefore using try and except
+		try:
 			size = video.streams.get_by_itag(tag).filesize /1000000
 		except Exception:
 			size ="Null"
@@ -98,6 +113,8 @@ def get_audio(video):
 	for x in video.streams.filter(type ='audio'):
 		abr = x.abr
 		tag = x.itag
+
+		#some files doesnt show filesize , it creates a traceback error , therefore using try and except
 		try:
 			size = video.streams.get_by_itag(tag).filesize /1000000
 		except Exception:
@@ -111,7 +128,7 @@ def get_audio(video):
 
 
 
-	
 start()
+	
 
 
