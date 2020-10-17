@@ -21,8 +21,8 @@ def start():
 
 	try:	#making directories to save file
 
-		system("mkdir youtube_downloader/video")	
-		system("mkdir youtube_downloader/audio")
+		system("mkdir -p youtube/video")	
+		system("mkdir -p youtube/audio")
 
 	except:	#directories already exists
 		pass
@@ -69,9 +69,9 @@ def get_details(url):
 	option = int(input("Choose 1 or 2 : "))
 
 	if option ==1:
-		get_audio(video)		#download audio file //passing the pytube object
-	elif option ==2:
 		get_video(video)		#download video file //passing the pytube object
+	elif option ==2:
+		get_audio(video)		#download audio file //passing the pytube object
 	else:
 		get_details(url)		#wrong option 
 
@@ -85,19 +85,19 @@ def get_video(video):
 
 	tag = int(input("Enter the tag number of resolution needed: "))
 
-	video.streams.get_by_itag(tag).download(output_path='youtube_downloader/video')
+	video.streams.get_by_itag(tag).download(output_path='youtube/video')
 
 def get_audio(video):
 
-	for x in video.streams.filter(type ='audio').all():
+	for x in video.streams.filter(type ='audio'):
 		abr = x.abr
 		tag = x.itag
 
 		print("bitrate : {}   ||  tag : {}".format(abr,tag))
 
-	tag = int(input("Enter the tag number of resolution needed: "))
+	tag = int(input("Enter the tag number of bitrate needed: "))
 
-	video.streams.get_by_itag(tag).download(output_path='youtube_downloader/audio')
+	video.streams.get_by_itag(tag).download(output_path='youtube/audio')
 
 
 
