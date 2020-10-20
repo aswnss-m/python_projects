@@ -1,5 +1,5 @@
 def quick_sort(arr):
-
+	from random import randint
 	#if the array contains 0 or 1 element we know that the array needs not be sorted therefore
 	if len(arr) <=1:	return arr
 
@@ -14,4 +14,4 @@ def quick_sort(arr):
 		elif value == pivot: equal.append(value)	#values that are equal to pivot
 		else:	larger.append(value)				#values greater than pivot
 
-	return quickSort(smaller)+equal+quickSort(larger)
+	return quick_sort(smaller)+equal+quick_sort(larger)
