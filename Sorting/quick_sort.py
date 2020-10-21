@@ -1,12 +1,13 @@
 def quick_sort(arr):
 	from random import randint
-	#if the array contains 0 or 1 element we know that the array needs not be sorted therefore
+
+	#If length of array is <=1 , The Array is itself sorted
 	if len(arr) <=1:	return arr
 
-	#these lists are to store the values after comparing with the pivot
+	#Store Values After Comparing With Pivot
 	smaller,equal,larger= [],[],[]
 
-	#choosing a random pivot point in the given array
+	#Selecting Random Pivot Point
 	pivot = arr[randint(0, len(arr)-1)]
 
 	for value in arr:
