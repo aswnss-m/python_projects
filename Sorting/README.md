@@ -8,6 +8,8 @@ grasp and understand for a beginner level programmer
 
 ## Files
 
+<!-- Insertion Sorting -->
+<!---------------------------------------------------------------------------------------------->
 <details>
 <summary>1.<a href="https://github.com/aswnss-m/python_projects/blob/master/Sorting/insertion_sort.py">Insertion Sorting</a>
 <br>
@@ -25,7 +27,9 @@ To sort an array of size n in ascending order:
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif">
 
 </details>
-
+<!---------------------------------------------------------------------------------------------->
+<!-- Selection Sorting -->
+<!---------------------------------------------------------------------------------------------->
 <details>
 <summary>2.<a href="https://github.com/aswnss-m/python_projects/blob/master/Sorting/selection_sort.py">Selection Sorting</a>
 <br>
@@ -89,4 +93,29 @@ Third Pass<br>
     ( 1 2 4 5 8 ) → ( 1 2 4 5 8 )<br>
 </blockquote>
 	<img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif">
+</details>
+
+<!---------------------------------------------------------------------------------------------->
+<!-- Quick Sorting -->
+<!---------------------------------------------------------------------------------------------->
+<details>
+  <summary>4.<a href="https://github.com/aswnss-m/python_projects/blob/master/Sorting/quick_sort.py">Quick Sort</a> <br>
+  <b>Quick Sort</b> is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot.
+  There are many different versions of quickSort that pick pivot in different ways. </summary><br>
+  The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct 
+  position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x.
+  All this should be done in linear time.
+
+### Algorithm
+
+  <blockquote>
+  <ol>
+  <li>Pick an element as a pivot</li>
+  <li>Compare the other element with the pivot and partition the list</li>
+  <li>Apply quick sort on the partiotioned lists</li>
+  <li>Join all the partitions together</li>
+  </ol>
+  </blockquote>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif">
+
 </details>
