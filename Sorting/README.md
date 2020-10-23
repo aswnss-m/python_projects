@@ -120,3 +120,31 @@ Third Pass<br>
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif">
 
 </details>
+
+<!---------------------------------------------------------------------------------------------->
+<!-- Merge Sorting -->
+<!---------------------------------------------------------------------------------------------->
+<details>
+<summary>6.<a href = "https://github.com/Anjan50/Python/blob/main/Algorithms/Sorting%20Algorithms/MergeSort.py">Merge Sort</a><br>
+<b>Merge Sort</b> is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. 
+</summary><br> 
+The merge() function is used for merging two halves.The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. See following C implementation for details.
+
+### Algorithm
+<blockquote>
+following C implementation for details.
+
+MergeSort(arr[], l,  r) <br>
+If r > l <br>
+<ol>
+     1. Find the middle point to divide the array into two halves:  <br>
+             middle m = (l+r)/2 <br>
+     2. Call mergeSort for first half:   <br>
+             Call mergeSort(arr, l, m)<br>
+     3. Call mergeSort for second half:<br>
+             Call mergeSort(arr, m+1, r)<br>
+     4. Merge the two halves sorted in step 2 and 3:<br>
+             Call merge(arr, l, m, r)<br>
+</blockquote>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif">
+</details>
