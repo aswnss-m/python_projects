@@ -8,10 +8,10 @@ In order to foster a welcoming and productive environment, we require contributo
 
 ## Pull Request Process
 
-1. Fork this repository and create a seperate branch (branch name should be the name of your program)
+1. Fork this repository and create a seperate branch (branch name should be the name of your program).
 2. Include your program in the directory. Make sure to add comments to your code and program is functional through command line.
-3. Include new python program information in the programs table on the `README.md`
-4. After making sure there is no merge conflicts, create a PR with your branch and `master`. Include any information that may be helpful for the reviewer
+3. Update `README.md` by adding your new python program in the table.
+4. After making sure there is no merge conflicts, create a PR with your branch and `master`. Include any information that may be helpful for the reviewer.
 
 ## Code of Conduct
 
