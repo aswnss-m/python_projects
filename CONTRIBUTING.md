@@ -10,8 +10,8 @@ In order to foster a welcoming and productive environment, we require contributo
 
 1. Fork this repository and create a seperate branch (branch name should be the name of your program)
 2. Include your program in the directory. Make sure to add comments to your code and program is functional through command line.
-3. Include new python program information in the programs table on the <code>README.md<code>
-4. After making sure there is no merge conflicts, create a PR with your branch and <code>master<code>. Include any information that may be helpful for the reviewer
+3. Include new python program information in the programs table on the `README.md`
+4. After making sure there is no merge conflicts, create a PR with your branch and `master`. Include any information that may be helpful for the reviewer
 
 ## Code of Conduct
 
@@ -21,7 +21,7 @@ Examples of positive behavior:
 
 * :raised_hands: Be respectful and welcoming
 * :+1: Show empathy towards other members
-* :speech_baloon: Accepting of constructive criticism
+* :speech_balloon: Accepting of constructive criticism
 
 ## Conclusion
 
