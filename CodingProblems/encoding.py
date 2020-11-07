@@ -14,7 +14,7 @@ For example the string,
 #usr_input = input()
 #for now
 
-usr_input = "AAAABBBCCDAAAAVVV"
+usr_input = "AAAABBBCCDAA"
 
 def encode(string):
     output = []
@@ -34,7 +34,9 @@ def encode(string):
                 break
         pos += 1
 
-
+    output.append(str(count))
+    output.append(char)
+                
     return "".join(output)
 
 encoded = encode(usr_input)
