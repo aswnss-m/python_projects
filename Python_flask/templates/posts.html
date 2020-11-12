@@ -1,0 +1,29 @@
+<!-- This file is an extension of base.html -->
+{% extends 'base.html' %}
+
+<!-- HEAD BLOCK -->
+{% block head%}
+    <title>POSTS</title>
+{%endblock%}
+
+<!-- BODY BLOCK -->
+{%block body%}
+    <h1>All Posts</h1>
+
+    <!-- FOR LOOP -->
+    {%for post in posts%}
+        <h3> {{post.title}} </h3>
+
+        <!-- IF LOOP -->
+        {%if post.author%}
+            <h5>By: {{post.author}} </h5>
+        
+        {%else%}
+            <h5>By: N/A</h5>
+        
+        {%endif%}
+
+        <p> {{post.content}} </p>
+    {%endfor%}
+
+{%endblock%}
