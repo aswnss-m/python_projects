@@ -1,0 +1,40 @@
+{%extends 'base.html'%}
+
+
+{% block head %}
+    <title>Posts</title>
+{%endblock%}
+
+{%block body%} 
+    <h1>All Posts</h1>
+    <!-- <hr> -->
+    <!-- This is where the posts should go -->
+
+
+
+    <hr>
+    <h3>CREATE POST</h3>
+    <form action="/posts" method="POST">
+        <table>
+            <tr>
+                <td>Title :</td>
+                <td><input type="text" name="title" id="title"></td>
+            </tr>
+            <tr>
+                <td>Author :</td>
+                <td> <input type="text" name="author" id="author"> </td>
+            </tr>
+            <tr>
+                <td>Content : </td>
+                <td> <input type="text" name="content" id="content"> </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="post"></td>
+                <td><input type="reset" value="clear"></td>
+            </tr>
+        </table>
+      <br>
+    </form>
+    <hr>
+
+{%endblock%}
