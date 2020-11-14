@@ -7,8 +7,18 @@
 
 {%block body%} 
     <h1>All Posts</h1>
-    <!-- <hr> -->
+    <hr>
     <!-- This is where the posts should go -->
+    {%for post in posts%}
+        <h3>{{post.title}}</h3>
+        
+        {%if post.author%}
+            <h4>Author : {{post.author}}</h4>
+        {%else%}
+            <h4>Author : N/A</h4>
+        {%endif%}
+        <p>{{post.content}}</p>
+    {%endfor%}
 
 
 
@@ -26,7 +36,8 @@
             </tr>
             <tr>
                 <td>Content : </td>
-                <td> <input type="text" name="content" id="content"> </td>
+                <!-- <td> <input type="text" name="content" id="content"> </td> -->
+                <td><textarea name="content" id="content" cols="21" rows="10" style="resize: none;"></textarea></td>
             </tr>
             <tr>
                 <td><input type="submit" value="post"></td>
