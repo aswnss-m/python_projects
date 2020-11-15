@@ -6,7 +6,7 @@ from datetime import datetime
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 
-#* Database object
+#* Database object , passing the flask object
 db = SQLAlchemy(app)
 
 #* Structuring the Database
@@ -30,6 +30,7 @@ def home():
     
     return render_template("index.html")
 
+# * Adding the method post to integrate with database : default is 'get' only
 @app.route('/posts', methods= ['GET', 'POST'])
 def posts():
 
@@ -43,7 +44,10 @@ def posts():
         db.session.add(new_post)
         db.session.commit()
         
+        #* Refreshing the page to show the db update
         return redirect('/posts')
+    
+    #* This runs at the start , getting previous datas from db
     else:
 
         all_posts = BlogPost.query.order_by(BlogPost.date_posted)
