@@ -1,0 +1,56 @@
+{%extends 'base.html'%}
+{%block head%}
+    <title>Home</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+{%endblock%}
+
+{%block body%}
+<center><h1>Student Mark Sheet</h1></center>
+<hr>
+<!-- This is where the list of student goes -->
+<hr>
+<h3>New Student Register</h3>
+<center>
+<!-- <form action="/home" method="POST">
+    <table>
+        <tr>
+            <td>Name : </td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td>Roll no : </td>
+            <td><input type="text" name="roll" id="roll"></td>
+        </tr>
+        <tr>
+            <td>Branch : </td>
+            <td><input type="text" name="branch" id="branch"></td>
+        </tr>
+        <tr>
+            <td>Physics : </td>
+            <td><input type="text" name="physics" id="physics"></td>
+        </tr>
+        <tr>
+            <td>Chemistry : </td>
+            <td><input type="text" name="chemistry" id="chemistry"></td>
+        </tr>
+    </table>
+</form></center> -->
+<form action="/home" method="POST">
+    <table>
+        {%for item in details%}
+            <tr>
+                <td> {{item}} :  </td>
+                <td><input type="text" name={{item}} id={{item}}></td>
+            </tr>
+        {%endfor%}
+            <tr>
+                <td><input type="submit" value="Register"></td>
+                <td><input type="reset" value="Clear"> </td>
+            </tr>
+    </table>
+</form>
+{%endblock%}
