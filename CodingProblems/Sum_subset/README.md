@@ -6,5 +6,15 @@ Given a list of integers S and a target k. Write a function that return a Subset
 
 Integers can appear more than once in the list. You may assume that there is no negative numver in the list
 
+> For Example
+>
+>> `input :`
+>> `S = [12,1,61,5,9,2] ` 
+>> ` k = 24 `
+>
+>> ` output : `
+>> [12,1,9,2]
+>
+>
 
 
