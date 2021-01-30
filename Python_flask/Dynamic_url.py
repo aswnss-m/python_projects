@@ -18,7 +18,7 @@ def hello_name(name):
 # Getting multiple data from url
 @app.route('/home/<string:name>/<int:id>')
 def get_id(name,id):
-    return "welcome " + name + " id : " + str(id)
+    return "welcome " + name + " id : " + str(id) #! you cant concantinate int and string , thats why we converted the int
 
 
 

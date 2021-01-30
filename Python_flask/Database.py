@@ -21,11 +21,23 @@ class BlogPost(db.Model):
     title = db.Column(db.String(100), nullable=False)
     content = db.Column(db.Text, nullable= False)
     author = db.Column(db.String(32), nullable = False, default= 'N/A')
-    date_posted =db.Column(db.DateTime, nullable=False, default= datetime.utcnow)
+    date_posted =db.Column(db.DateTime, nullable=False, default= datetime.utcnow) #default value
 
     # * Printing the ID , each time a BlogPost is creating
     def __repr__(self):
         return 'Blog post ' + str(self.id)
+    
+
+    
+    #To Activate the database , follow these steps:
+    # Open python in terminal
+    # Navigate to this app directory
+    # from <filename> import <database_object_name>
+    # <database_object_name>.create_all()
+
+    # Adding elements into the db from terminal
+    # <database_classname>.query.all() <-- to see the items currently in that db
+    # <database_object_name>.session.add(<class_name>(item_name = item_content, item_name= item_content))
 
 @app.route('/')
 @app.route('/home')

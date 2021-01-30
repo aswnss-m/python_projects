@@ -41,7 +41,7 @@ def posts():
 
         new_post = BlogPost(title =post_title,content =post_content,author=post_author)
 
-        db.session.add(new_post)
+        db.session.add(new_post) 
         db.session.commit()
         
         #* Refreshing the page to show the db update

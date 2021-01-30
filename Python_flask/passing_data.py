@@ -24,7 +24,7 @@ all_posts = [
 @app.route('/posts')
 def posts():
     # ! Passing data to an html file is done using render_template
-    # TODO render_template('<filename>', <variable_name> = <variable>)
+    # TODO render_template('<filename>', <variable_name> = <variabl e>)
     return render_template('posts.html', posts=all_posts)
 
 if __name__ == "__main__":
